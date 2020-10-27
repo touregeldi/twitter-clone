@@ -1,7 +1,7 @@
 import React from "react";
 import './Sidebar.css';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import SidebarOption from "../SidebarOption";
+import SidebarOption from "./SidebarOption/SidebarOption";
 import HomeIcon from '@material-ui/icons/Home';
 import SearchIcon from '@material-ui/icons/Search';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
@@ -17,7 +17,7 @@ import {Button} from "@material-ui/core";
 function Sidebar(){
     return(
         <div className="sidebar">
-            <TwitterIcon className="twitterIcon"/>
+            <TwitterIcon className="sidebar__twitterIcon"/>
 
             <SidebarOption active text="Home" Icon={HomeIcon}/>
             <SidebarOption text="Explore" Icon={SearchIcon}/>
